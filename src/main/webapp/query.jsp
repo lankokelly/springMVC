@@ -9,8 +9,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+<table border=1 align=center width=600>
+<tr> <td>id <td>name <td>username <td>password
 <%
-new memberDao().queryAll();
+out.println(new memberDao().queryAll());
 %>
+</table>
 </body>
 </html>

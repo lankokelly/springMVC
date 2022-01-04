@@ -102,10 +102,10 @@ public class memberDao implements implDao{
 			System.out.println(rs);
 			while(rs.next()) 
 			{
-				show = show + rs.getInt("id")+ "\t" 
-							+ rs.getString("name") + "\t" 
-							+ rs.getString("username") + "\t" 
-							+ rs.getString("password") + "\n";
+				show = show + "<tr>" + "<td>" + rs.getInt("id")
+									+ "<td>"+ rs.getString("name") 
+									+ "<td>"+ rs.getString("username") 
+									+ "<td>"+ rs.getString("password") ;
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
