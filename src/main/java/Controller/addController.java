@@ -28,7 +28,7 @@ public class addController extends HttpServlet{
 		 *3.新增到資料庫-->add(Object); 
 		 *4.換頁--->ok.html 
 		 */
-	
+		request.setCharacterEncoding("utf-8");
 		String Name=request.getParameter("name");
 		String userName=request.getParameter("username");
 		String passWord=request.getParameter("password");
